@@ -1,0 +1,8 @@
+@import thenextone.js
+
+
+div {
+border-box: 70%;
+align: center;
+button(type = "submit" onclick = message_Board(); )
+}

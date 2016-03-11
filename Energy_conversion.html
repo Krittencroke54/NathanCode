@@ -1,0 +1,148 @@
+
+
+   <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Conversion Tables </title>
+        <link rel="stylesheet" href="CSS/normalize.css">
+
+
+
+        <link rel="stylesheet" href="CSS/frequencyconversions.css">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500' rel='stylesheet' type='text/css'>
+    
+        
+    </head>
+    
+    <body ng-app="energyConversionApp">
+        <script src="JS/vendor/jquery.min.js"></script>
+
+        <script src="JS/angular.min.js"></script>
+    <script src="controllers/angular_energy.js"></script>
+
+
+    
+        
+        <header> Energy Conversion Tables </header>
+ <h1>  
+        <div class="navi"><a data-ga-click="Navigation, go to portal negative_portal aligned stargate, text:negative" href="pages/negative_portal.html">NEGATIVE</a></div>
+        <div class="navi"><a data-ga-click="Navigation, go to portal align_left stargate, text:LEFT" href="pages/align_left.html">LEFT</a></div>
+            <div class="navi"><a data-ga-click="Navigation, go to Ground Zero Star Gate, text:ZERO" href="pages/zero.html">ZERO</a></div>
+          <div class="navi"><a data-ga-click="Navigation, go to portal align_right stargate, text:RIGHT" href="pages/align_right.html">RIGHT</a></div>
+        <div class="navi"><a data-ga-click="Navigation, go to portal positive_portal aligned stargate, text:positive" href="pages/positive_portal.html">POSITIVE</a></div>
+   </h1>
+      
+  <table class="container">  
+      <div class="container_functions">
+          <tr ng-controller = "energyCntrl1" class="table">             <td for="Enter Frequency">
+            Enter the frequency to be converted to coordinated sound variable. 
+    </td>
+         <td>
+        <input type="text" id="calculator" name="Enter Frequency"> </td>
+       <td> <button id="calculater" class="calculater" ng-click="frequency_conversion();">
+            Submit F
+        </button>
+          </td>
+
+    <tr ng-controller="light_speed" class="table">
+    <td for="Light distance conversion">Enter seconds light has traveled.</td>
+      <td>
+        <input type="text" id="seconds" class="calculater" name="Light_Distance">  </td>
+        <td> <button id="calculater" class ="calculater" type="submit" ng-click="distance_lightm();">Submit S</button>
+        </td>
+   </tr>
+    
+     <tr ng-controller='freq_wav' class="table">
+    <td for="frequency to wavelength conversion">Enter a frequency to convert into a wavelength.</td>
+      <td>
+        <input type="text" id="freq" class="calculater" name="wave_length">  </td>
+<!--    <a href=javascript:distance_light();></a>-->
+        <td> <button id="submit_freq" class ="calculater" type="button" ng-click="frequency_to_wavelength();">Submit F</button>
+        </td>
+   </tr>
+    
+        <tr ng-controller="wav_2freq" class="table">
+    <td for="frequency to wavelength conversion">Enter a wavelength to convert into a frequency.</td>
+      <td>
+        <input type="text" id="wavlng" class="calculater" name="wave_length">  </td>
+<!--    <a href=javascript:distance_light();></a>-->
+        <td> <button id="submit_wavlngth" class ="calculater" type="button" ng-click="wavelength_to_frequency();">Submit W</button>
+        </td>
+   </tr>
+    
+    <tr ng-controller="speed_light" class="table">
+            <td>Enter the frequency and wavelength to get the speed of light.</td>
+     <td>
+       <label>frequency</label>
+        <input ng-hide="submitlightspd" type="text" id="frequet" class="calculater"  name="light_speed">  </td>
+         <td>
+           <label>wavelength</label>     
+        <input type="text" id="wvlnth" class="calculater" name="light_speed">  </td>
+<!--    <a href=javascript:distance_light();></a>-->
+        <td> <button id="submitlightspd" class="calculater" type="button" ng-click="spdlight();">Submit F&amp;W</button>
+            </td> </tr>
+    
+    
+          <tr ng-controller="CRpower"
+ class="table">
+            <td>Convert Current and Resistance to get Power</td>
+     <td>
+       <label>current</label>
+        <input type="text" id="current" class="calculater"  name="power_equation">  </td>
+         <td>
+           <label>resistance</label>     
+        <input type="text" id="resistance" class="calculater" name="power_conversion">  </td>
+<!--    <a href=javascript:distance_light();></a>-->
+        <td> <button id="submitCnR" class="calculater" type="button" ng-click="powerCnR();">Submit C&amp;R</button>
+            </td> </tr>
+     <tr ng-controller="PowerCV"  class="table">
+     <td>Convert Current and Voltage to get Power</td>
+     <td>
+       <label>current</label>
+        <input type="text" id="curre" class="calculater" name="power_conversion">  </td>
+         <td>
+           <label>voltage</label>     
+        <input type="text" id="volt" class="calculater"  name="power_conversion">  </td>
+<!--    <a href=javascript:distance_light();></a>-->
+        <td> <button id="submitVnC" class="calculater" type="button" ng-click="power_volts();">Submit C&amp;V</button>
+        </td>
+    </tr>
+          </div>
+   </table>
+        <div class="foot_wrap">
+     <footer>
+        <ul class="footer_links">
+           <li> <a data-ga-click="Footer, go to site, text:site" href="Energy_conversion.html">site</a>
+            </li>
+           
+            
+            <li> 
+               <a data-ga-click="Footer, go to about, text:about" href="pages/about.html">about</a>
+            </li>
+          
+          Math made easy 
+            
+          
+          <li> <a data-ga-click="Footer, go to contact, text:contact" href="pages/contact.html">contact</a>
+            </li>
+            <li> <a data-ga-click="Footer, got to help, text:help" href="pages/help.html">help</a>
+            </li> 
+           </ul>
+        </footer>  
+</div>
+        
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

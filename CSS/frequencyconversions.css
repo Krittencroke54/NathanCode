@@ -1,0 +1,391 @@
+*{
+  font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+
+}
+
+
+
+
+header {
+  display:inline-block;
+    text-align:center;
+    background-color:royalblue;
+    font-size: 40px;
+    height:200px;
+    width:100%;    
+    padding-bottom:50px;
+    padding-right: 126px;
+    padding-top:80px;
+    
+}
+
+/*navigation*/
+
+
+
+h1{
+    background-color:rebeccapurple;
+    text-align:center;
+    height: 80px;
+    margin-top:0;
+   padding-right:170px;
+    width:100%;
+}
+
+      .navi {
+        display:inline-block;
+        width:16%;
+      }  
+  h1 a {
+  background-color:azure;
+  width: 70%;
+/*  height: 80%;*/
+  display: inline-block;
+  padding-right:-15px;
+  margin-left:56px;
+  border: 3px solid black;
+  border-radius: 8px;
+  text-align: center;
+  font-size:12px;
+ }
+/*body*/
+
+
+body{
+
+    height:100%;
+}
+
+.table {
+/*      display:inline-block; */
+    box-sizing: content-box;
+    height: 80%;
+    text-align: center;
+    margin: 20px;
+    padding: 120px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    background-color: cornflowerblue;
+}
+.container{
+  display: flex;
+  flex-direction:row; 
+  background-color:azure;
+  justify-content: center;
+  margin:10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:crimson;
+    font-size:45px;
+   min-height: 100vh;
+}
+
+ #calculator, .calculater {
+    width:80%;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 8px;
+    float: bottom;
+    position: relative;
+    left:18px;
+    box-sizing: border-box;
+    margin: 5% 2%;
+     font-size:9px;
+}
+.container td{
+  font-size:16px;
+    
+}
+
+    textarea {
+        width:30%;
+        height:25%;
+    }
+
+
+
+
+ul.footer_links{
+  font-size:16px
+}
+ .footer_links li  {
+  box-sizing:content-box;
+  text-align: center;
+  display: inline-block;
+  width: 15%;
+  height:3px;
+  margin: 0;
+  padding:2%;
+  font-size:18px;
+  
+}
+ footer li a, footer li{
+  font-size:15px;
+}
+ @media (max-width 1280px) {
+            .foot_wrap {
+                min-height: calc(100vh - 89px);
+            }
+        }
+
+@media screen and (max-width: 660px){
+    header {
+    text-align:center;
+    background-color:royalblue;
+    font-size:23px;
+        height:100px;
+      width: 100%
+    margin-top:0px;
+    border:10% 5%;                  
+    margin:0;
+padding-top:35px;
+  }
+/* navigation */
+
+h1{
+    background-color:mediumpurple;
+    text-align:center;
+    height:30px;
+    padding:1% 0%;
+    margin-top: 0;
+  
+}
+
+    .navi {
+        display:inline-block;
+        width:15%;
+      }  
+  h1 a {
+  background-color:azure;
+  width: 80%;
+  height: 80%;
+  display: inline-block;
+  padding: 0;
+  margin: 0 3% 1% 5%;
+  border: 3px solid black;
+  border-radius: 8px;
+  text-align: center;  
+font-size: 10px;
+}
+
+/*    body things */
+.container{
+  display: flex;
+  flex-direction:row; 
+  background-color:crimson;
+        
+  justify-content: space-around;
+}
+
+
+body {
+    background-color:cornflowerblue;
+    font-size:9px;
+    width:100%;
+}
+     #calculator, .calculater {
+   width:80%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border: 3px solid black;
+    border-radius: 8px;
+   left:18px;
+   box-sizing: border-box;
+   margin:20px;
+   font-size:9px;
+   padding-right: 20px;
+   
+   }
+    
+ 
+/*footer things */
+
+
+    
+ footer ul {
+    display:flex;
+    font-size:16px;
+   width:100%;
+   text-align:justify;
+   flex-wrap: nowrap;
+   justify-content:flex-start;
+   flex-direction:row;
+}
+  footer li a{
+    flex-direction:row;
+    width:15%
+    
+    
+  }
+footer li {
+  width:15%;
+  height:90px;
+  margin: auto;
+  justify-content:center;
+  flex-direction:row;
+}
+       
+    @media screen and (max-width: 580px){
+       
+/***********        Header  content   ************/
+        
+        header{
+    text-align:center bottom;
+    background-color:royalblue;
+    font-size: 16px;
+    height:70px;
+    width:100%;
+    padding-left:50%;
+}
+
+        
+        
+
+/****************  Navigation  *******************/
+
+     h1 {
+         display:inline-block;
+        justify-content:center;
+        align-content: center;        
+        flex-direction:column;
+       /* z-margin:1;*/
+        background-color:mediumpurple;
+        height:180px;
+        width:200%;
+       
+        
+        }
+  .navi {
+    display:flex;
+    width:50%;
+    text-align:center;
+    font-size:8px;
+    margin-bottom:10px;
+    height:15px;
+    padding-left: 35%;
+      align-content: center;
+  }
+
+           
+  h1 a {
+  background-color:lightskyblue;
+ 
+justify-content:center;    
+  height: 13px;
+  display: flex;
+  margin-left:20px;
+  width:50%;
+  border: 3px solid black;
+  border-radius: 8px;
+ font-size:9px;
+
+
+  }
+  
+    
+ 
+
+
+/*****************        body content    **************/
+        
+body {
+    
+    font-size:12px;
+
+    height:100%;
+  }
+        
+ .container td  {
+  display: flex;
+  font-size:19px; 
+  flex-direction:row; 
+  background-color:crimson;
+  justify-content: center;
+  height:45%;
+  text-align: center;
+  width:80vh;
+
+}
+        
+        
+
+        
+.table label{
+      height:50%;
+    text-align: left;
+}
+
+.table{
+    display:flex;
+    flex-direction: column;
+     height:70%;
+}
+
+        
+        
+        
+      
+   
+ #calculator, .calculater {
+     text-align: center;
+    width:40%;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid black;
+    border-radius: 8px;
+   box-sizing: border-box;
+   margin: 5% 5%;
+   height:90%;    
+    font-size:10px;
+
+        }
+        
+       button{
+            text-align:center;
+           align-content: center;
+        }
+/*******     Footer  ******/
+        
+        
+   
+  
+      
+        
+
+ footer {
+    display:flex;
+     flex-direction: column;
+    text-align:center;
+    font-size:16px;
+     height:230px;
+     padding-left: 100%;
+    
+}
+
+.footer_links  {
+  
+  box-sizing:content-box;
+  text-align: center;
+  display: flex;
+flex-direction:column;
+  width: 8%;
+  height:100%;
+  margin: auto;
+  padding:5%;
+  justify-content: space-around;
+     
+    flex-direction:column;
+    height: 180px;     
+    text-align:center;
+}
+
+
+       

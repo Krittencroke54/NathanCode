@@ -1,0 +1,39 @@
+/*
+Examples of other imports:
+  @import 'base.css';
+  @import 'layout.css';
+  @import 'typography.css';
+*/
+
+@import 'import-styles.css';
+* {
+    margin:0;
+    padding:0;
+}
+span {
+
+    text:150px; 
+    text-align: center;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    }
+    
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+  color: white;
+}
+
+header {
+  background-color: orange;
+}
+
+p {
+  font-size: 20px;
+}
+
