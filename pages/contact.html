@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../CSS/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../CSS/main_forms.css">
+        
     </head>
         <body>
            <header>
@@ -30,6 +31,9 @@
           <li> <a data-ga-click="Footer, go to contact, text:contact" href="../pages/contact.html">contact</a>
             </li>
             <li> <a data-ga-click="Footer, got to help, text:help" href="../pages/help.html">help</a>
+            </li> 
+                  
+           <li> <a data-ga-click="Footer, got to help, text:flikrsearchengine" href="../pages/flicksearch.html">Search Flikr</a>
             </li> 
                   
     </ul>
@@ -56,12 +60,12 @@
             <legend><span class="contact_message">2: </span>Your Contact Message</legend>
               <label for="message">Enter Message:</label>
               <textarea id="message" name="user_message"></textarea>
-              <button type="submit">SEND MESSAGE</button>
+              <button type="submit" id="submit" >SEND MESSAGE</button>
           
             </fieldset>
         </form>
 
-      
+      <script src="../JS/contact.js"></script>
     
     </body>
 </html>
